@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Meu portfólio</title>
 </head>
 
 <body>
     <header class="container text-center">
-        <img src="img/avatar-perfil.png" alt="avatar do Turtlurle" class="rounded-circle" width="150" height="150" srcset="">
+        <img src="img/avatar-perfil.png" alt="avatar do Turtlurle" class="rounded-circle" width="150" height="150"
+            srcset="">
         <p class="lead">Eu sou Turtlurle</p>
         <h1>Eu estudo Programação</h1>
         <p>Sou estudante de programação, eu experimento com ferramentas de código para testar o meu potencial.</p>
@@ -29,31 +31,104 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="img/projeto-1.png" class="card-img-top" alt="Uma imagem mostando um jogo com 4 emojis na esquerda em uma pista com uma linha de chegada na direita">
+                    <img src="img/projeto-1.png" class="card-img-top"
+                        alt="Uma imagem mostando um jogo com 4 emojis na esquerda em uma pista com uma linha de chegada na direita">
                     <div class="card-body">
-                      <h5 class="card-title">Jogo de corrida</h5>
-                      <p class="card-text">Jogue usando A, S, D e F, pressionando para fazer o emoji andar para frente, o primeiro a chegar a linha de chegada ganha.</p>
-                      <a href="https://editor.p5js.org/Turtlurle/sketches/SHSgW108V" class="btn btn-primary">Abrir Projeto</a>
+                        <h5 class="card-title">
+                            Jogo de corrida
+                        </h5>
+                        <p class="card-text">
+                            Jogue usando A, S, D e F, pressionando para fazer o emoji andar para frente, o primeiro a
+                            chegar a linha de chegada ganha.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Veja o projeto
+                        </button>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="img/projeto-2.png" class="card-img-top" alt="Uma imagem mostando um jogo com 4 emojis na esquerda em uma pista com uma linha de chegada na direita">
+                    <img src="img/projeto-2.png" class="card-img-top"
+                        alt="Uma imagem mostando um jogo com 4 emojis na esquerda em uma pista com uma linha de chegada na direita">
                     <div class="card-body">
-                      <h5 class="card-title">Quente Frio</h5>
-                      <p class="card-text">Ache o ponto secreto para ganhar, o ponto se move para ter um pouco de desafio, quanto mais perto você fica, mais pequeno o circulo fica.</p>
-                      <a href="https://editor.p5js.org/Turtlurle/sketches/ghpYP_QYX" class="btn btn-primary">Abrir Projeto</a>
+                        <h5 class="card-title">
+                            Quente Frio
+                        </h5>
+                        <p class="card-text">
+                            Ache o ponto secreto para ganhar, o ponto se move para ter um pouco de desafio, quanto mais
+                            perto você fica, mais pequeno o circulo fica.
+                        </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Veja o projeto
+                        </button>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
     </main>
+
+    <div class="modal" id="modal1" tabindex="-1">
+        <!-- Modal 1 -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jogo de corrida</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Ache o ponto secreto para ganhar, o ponto se move para ter um pouco de desafio, quanto mais
+                        perto você fica, mais pequeno o circulo fica.
+                    </p>
+                    <p>
+                        Você precisa planejar para achar o ponto! Sera que você consegue achar o ponto bem rapido?
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                    <a href="//editor.p5js.org/Turtlurle/sketches/SHSgW108V" class="btn btn-primary">Abrir</a>
+                    <!-- https://editor.p5js.org/Turtlurle/sketches/SHSgW108V -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2" tabindex="-1">
+        <!-- Modal 1 -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Quente frio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Jogue usando A, S, D e F, pressionando para fazer o emoji andar para frente, o primeiro a chegar
+                        a linha de chegada ganha.
+                    </p>
+                    <p>
+                        Este é um jogo de multiplayer, então precisa de quatro pessoas para jogar.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Fechar
+                    </button>
+                    <a href="//editor.p5js.org/Turtlurle/sketches/ghpYP_QYX" class="btn btn-primary">Abrir</a>
+                    <!-- https://editor.p5js.org/Turtlurle/sketches/ghpYP_QYX -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="container py-5">
         <h2>Entre em contato</h2>
         <div>
-            <a href="//github.com/Turtlurle">Github</a>
+            <i class="bi bi-github"></i><a href="//github.com/Turtlurle">Github</a>
         </div>
         <p class="my-5 text-center">© Copyright 2025. Produzido por Turtlurle</p>
     </footer>
